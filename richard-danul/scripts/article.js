@@ -37,9 +37,13 @@ Article.prototype.toHtml = function() {
   
   $newArticle.find('h1').text(this.title);
   $newArticle.find('address a').text(this.author);
+  $newArticle.find('address a').attr('href', this.authorUrl);
+  $newArticle.find('.article-body').html(this.body);
+  
+  
 
   // REVIEW: Display the date as a relative number of 'days ago'
-  $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+  $newArticle.find('time').html(`${this.publishedOn}, about ${parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000)} days ago`);
   $newArticle.append('<hr>');
   return $newArticle;
 };
