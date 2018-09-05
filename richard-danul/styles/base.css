@@ -10,3 +10,13 @@ main {
 .content-and-sidebar {
   display: flex;
 }
+
+@media (max-width: 700px) {
+  .content-and-sidebar {
+    flex-direction: column;
+  }
+
+  main {
+    width: 90vw;
+  }
+}

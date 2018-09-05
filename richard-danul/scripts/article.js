@@ -56,3 +56,9 @@ rawData.sort(function(a,b) {
 rawData.forEach((article) => articles.push(new Article(article)));
 
 articles.forEach((aObj) => $('#articles').append(aObj.toHtml()));
+
+//give us extra brownie points for using jQuery animations! :)
+
+$('.icon-menu').on('click', () => {
+  $('.clearfix ul').slideToggle();
+});
