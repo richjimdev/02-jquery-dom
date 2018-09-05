@@ -4,8 +4,13 @@
 
 .clearfix li {
   list-style: none;
-  background-color: white;
+  background-color: rgb(50, 41, 124);
   font-size: 1.3em;
   margin: 10px 0px;
   padding: 5px 5px;
+}
+
+.clearfix li a {
+  text-decoration: none;
+  color: white;
 }
