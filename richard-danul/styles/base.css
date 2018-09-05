@@ -1,0 +1,12 @@
+body {
+  background-color: gainsboro;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content-and-sidebar {
+  display: flex;
+}

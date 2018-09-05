@@ -1,3 +1,11 @@
 .template {
   display: none;
 }
+
+.clearfix li {
+  list-style: none;
+  background-color: white;
+  font-size: 1.3em;
+  margin: 10px 0px;
+  padding: 5px 5px;
+}
