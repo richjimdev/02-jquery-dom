@@ -21,8 +21,8 @@ Article.prototype.toHtml = function() {
   // Cloning allows us to modify the element without changing the original. We can then do what we need with this clone node instead of using the original data.
 
   let $newArticle = $('article.template').clone();
-  $newArticle.removeClass('template');
   /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
+  $newArticle.removeClass('template');
 
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
@@ -34,6 +34,9 @@ Article.prototype.toHtml = function() {
       3. article title,
       4. article body, and
       5. publication date. */
+  
+  $newArticle.find('h1').text(this.title);
+  $newArticle.find('address a').text(this.author);
 
   // REVIEW: Display the date as a relative number of 'days ago'
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
