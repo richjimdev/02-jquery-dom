@@ -7,7 +7,7 @@ let articles = [];
 
 function Article (rawDataObj) {
   // TODO: Use the JS object that is passed in to complete this constructor function:
-  // Save ALL the properties of `rawDataObj` into `this`
+  // Save ALL the properties of `rawDataObj` into `this` DONE
   this.title = rawDataObj.title;
   this.category = rawDataObj.category;
   this.author = rawDataObj.author;
@@ -45,7 +45,7 @@ rawData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-// TODO: Refactor these for loops using the .forEach() array method.
+// TODO: Refactor these for loops using the .forEach() array method. DONE
 
 rawData.forEach((article) => articles.push(new Article(article)));
 
