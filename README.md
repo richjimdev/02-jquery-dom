@@ -3,7 +3,7 @@
 ## Lab 02
 Welcome to your first lab assignment for Code 301!!
 
-Today we'll be kicking off our blog app by applying what we learned in lecture to implement a mobile-first design using responsive web design techniques, and use jQuery to interact with the DOM. You'll also need to spend some time getting familiar with the new Git/GitHub & Pair Programming workflow that we'll utilize throughout this course.
+Today we'll be kicking off our blog app by applying what we learned in lecture to interact with the DOM using jQuery. You'll also need to spend some time getting familiar with the new Git/GitHub & Pair Programming workflow that we'll utilize throughout this course.
 
 *Please take the time to read carefully through each of the READMEs for lab assignments as they have detailed information regarding your assignment, such as: submission instructions, resources, configuration, user stories with feature tasks, and documentation.*
 
