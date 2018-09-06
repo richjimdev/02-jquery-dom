@@ -1,0 +1,20 @@
+.heading-group-h1 {
+ background-color: rgb(50, 41, 124);
+ margin: 0;
+ text-align: center;
+ color: gainsboro;
+}
+
+.heading-group-h1 h1 {
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 3em;
+}
+
+.heading-group-h1 h2 {
+  padding: 0px 0px 20px;
+} 
+
+.clearfix {
+  padding-right: 25px;
+}
